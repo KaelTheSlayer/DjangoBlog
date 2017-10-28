@@ -1,0 +1,140 @@
+.archive-body {
+	background: #1abc9c;
+	font-family: Tahoma, Arial, sans-serif;
+	color:#0b5d4d;
+}
+.a-article {
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.archive {
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	background:#96dacd;
+}
+.header{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: Tahoma, Arial, sans-serif;
+	background:#caebe4;
+}
+#logo {
+	position:relative;
+	margin-left:320px;
+	margin-right:320px;
+	width:338 px;
+	height:100px;
+
+}
+p.service-title{
+	font-size:3em;
+	font-weight:bold;
+    margin-left: 50px;
+	display:block;
+}
+.header-text-area {
+	margin-top:50px;
+	float:left;
+	width:60%;
+	
+}
+a {
+	position:relative;
+	z-index:1;
+}
+.header a {
+	color:#60bca3;
+	margin-left:50px;
+	font-size:2em;
+}
+a.new_post {
+	display:block;
+	margin-top:50px;
+	margin-left:150px;
+	}
+.icons-for-parallax {
+	height:530px;
+	position:relative;
+}
+.icons-for-parallax img {
+	position:absolute;
+	top:0;
+}
+.icon-for-parallax-first {
+	width:200px;
+	margin-top:200px;
+	z-index:3;
+}
+.icon-for-parallax-second {
+	width:175px;
+	margin-top:100px;
+	margin-left:80px;
+	z-index:2;
+}
+.icon-for-parallax-third {
+	width:150px;
+	margin-left:160px;
+	z-index:1;
+}
+
+.onepost .article-author {
+	width:50%;
+	float:left;
+}
+
+.onepost .article-created-date {
+	text-align:right;
+}
+
+.onepost .article-text{
+	display:inline;
+	color;
+}
+
+a.fold-button {
+	align:right;
+	color:#0b5d4d;
+}
+	
+a.post-title{
+	font-size:2em;
+	font-weight:bold;
+	margin-top: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+	display:inline-block;
+	width:90%;
+	color:#0b5d4d;
+}
+	
+.onepost_folded .article-author {
+	display:none;
+}
+
+.onepost_folded .article-created-date {
+	display:none;
+}
+
+.onepost_folded .article-text {
+	display:none;
+}
+.onepost_folded .one-post-shadow{
+	display:none
+}
+
+.onepost{
+	position:relative;
+}
+.one-post-shadow {
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:black;
+	z-index:0;
+	opacity:0;
+}

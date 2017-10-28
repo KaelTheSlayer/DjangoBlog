@@ -1,0 +1,26 @@
+body {
+	background: #1abc9c;
+	font-family: Tahoma, Arial, sans-serif;
+	color:#ffffff;
+	margin-left:0;
+	padding:0;
+}
+.header img {
+	display:block;
+	margin:auto;
+	width:318 px;
+}
+h1{
+	text-align:center;
+}
+form {
+	width:300px;
+	margin:0 auto;
+}
+input[type=text],[type=password],[type=email]{
+	width:100%;
+}
+input[type=submit],[type=reset]{
+	height:30px;
+	width:49%;
+}

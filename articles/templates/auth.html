@@ -1,0 +1,26 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Авторизация </title>
+	<link rel="stylesheet" href="{%static 'css/regauth.css'%}"/>
+</head>
+<body>
+<div class="header">
+	<img src="{% static 'img/logo.png'%}"/>
+</div>
+	<h1>Авторизация</h1>
+	<form method="POST"> {% csrf_token %}
+		Имя пользователя:<br>
+		<input type="text" name="username" 
+		value="{{ form.username }}"><br>
+		Пароль:<br>
+		<input type="password" name="password" 
+		value="{{ form.password }}"><br>
+		<br>
+		<input type="submit" value="Авторизация">
+		<input type="reset" value="Сбросить">
+		{{ form.errors }}
+	</form>
+</body>
+</html>

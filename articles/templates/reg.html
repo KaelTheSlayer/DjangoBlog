@@ -1,0 +1,33 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Регистрация </title>
+	<link rel="stylesheet" href="{%static 'css/regauth.css'%}"/>
+</head>
+<body>
+<div class="header">
+	<img src="{% static 'img/logo.png'%}"/>
+</div>
+	<h1>Регистрация</h1>
+	<form method="POST"> {% csrf_token %}
+		Имя пользователя:<br>
+		<input type="text" name="username" 
+		value="{{ form.username }}"><br>
+		Электронная почта:<br>
+		<input type="email" name="email" 
+		value="{{ form.email }}"><br>
+		Пароль:<br>
+		<input type="password" name="password" 
+		value="{{ form.password }}"><br>
+		<br>
+		Подтвердите Пароль:<br>
+		<input type="password" name="sec_password" 
+		value="{{ form.sec_password }}"><br>
+		<br>
+		<input type="submit" value="Регистрация">
+		<input type="reset" value="Сбросить">
+		{{ form.errors }}
+	</form>
+</body>
+</html>
